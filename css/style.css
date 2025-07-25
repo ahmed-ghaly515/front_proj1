@@ -1,0 +1,829 @@
+* {
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    height: 8000px;
+}
+
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    opacity: 0.90;
+}
+
+.img1 {
+    height: 70px;
+    width: 120px;
+    /* left: 0; */
+    float: left;
+}
+
+.header-search {
+    color: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 2%;
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+}
+
+
+.list {
+    list-style: none;
+    float: right;
+    margin-right: 50px ;
+    padding-top: 20px;
+}
+
+.list li {
+    display: inline;
+}
+.list li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    position: relative;
+}
+
+.list li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #f0c040;
+    transition:  0.4s ;
+}
+
+.list li a:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;   
+    background-color: white;
+    min-width: 220px;
+    z-index: 1000;
+    padding: 10px 0;
+    /* border-radius: 8px; */
+}
+
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/istockphoto-1095554930-1024x1024.jpg);
+    background-size: cover;
+}    
+
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    position : absolute; 
+    background-color: rgba(0, 0, 0, 0.7);
+}    
+
+.home-content{
+    width: 50%;
+    position : absolute;
+    top : 50%;
+    left : 50% ; 
+    transform: translate(-50%,-50%);
+    text-align: center;
+}    
+
+.home-content h2{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    word-spacing: 5%;
+    text-transform: uppercase;
+}    
+
+
+.home-content p {
+    color: rgba(250, 235, 235, 0.89);
+    margin: 20px 0px;
+    letter-spacing: 3px;
+}    
+
+.home-btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}    
+
+.btn2 {
+    background-color: blue;
+    color:white;
+    margin-left: 15px;
+}    
+
+.home-btn:hover{
+    opacity: 0.7;
+}    
+
+.container{
+    text-align: center;
+    /* border: 3px solid black; */
+    height: 800px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.line {
+    width: 90px;
+    height: 4px;
+    background-color: blue;
+    text-align: center;
+    margin : 10px auto ; 
+}
+
+.s-section-div{
+    width: 340px;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin: 80px 80px;
+    position: relative;
+}
+
+.icon{
+    font-size: 30px;
+    padding-top: 10px ;
+}
+
+.div-h3{
+    padding-top: 15px;
+}
+
+.div-p{
+    padding-top: 20px;
+}
+.s-section-div::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 216, 245);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.s-section-div:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+
+
+.container2{
+    background-color  : wheat;
+    margin-top: 15%;
+}
+
+.container2-img{
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    width: 360px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px 20px ;
+    position: relative;
+    display: inline-block;
+}
+
+.c2-img1{
+     background-image: url(../images/istockphoto-1652006504-2048x2048.jpg);
+}
+
+.c2-img2{
+     background-image: url(../images/istockphoto-1480105317-2048x2048.jpg);
+}
+
+.c2-img3{
+     background-image: url(../images/istockphoto-175005911-2048x2048.jpg);
+}
+
+.c2-img4{
+     background-image: url(../images/istockphoto-2152585226-2048x2048.jpg);
+}
+
+.c2-img5{
+     background-image: url(../images/istockphoto-824633240-2048x2048.jpg);
+}
+
+.c2-img6{
+     background-image: url(../images/still-life-sport-composition.jpg);
+}
+
+
+.container2-img-cpt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #f2f2f2;
+    text-align: center;
+    visibility: hidden;
+}
+
+.container2-img:hover .container2-img-cpt {
+    visibility: visible;
+}
+
+.container2-img-cpt h2{
+    text-transform: uppercase;
+}
+
+.container2-img-cpt p{
+    font-size: 20px;
+    padding-top: 6%;
+}
+.container2-img-cpt i{
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+
+.container3{
+    margin-top: 10%;
+}
+
+
+.container3-div{
+    width: 340px ;
+    height: 180px ;
+    border: 2px solid black;
+    margin: auto;
+    margin: 40px 80px;
+    float: left;
+    position: relative;
+}
+
+
+.c3-i {
+  float: left;
+  font-size: 30px;
+  color: blue;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.div3-h3{
+  margin: 15px 35px 0 0;
+  font-size: 25px;
+}
+
+.div3-p{
+    opacity: 0.4;
+    margin: 0px 42px;
+    font-size: 17px;
+}
+.div3-h3-3{
+    margin: 15px 50px 0 0;
+  font-size: 25px;
+}
+
+
+.div3-p4{
+    font-size: 17px;
+}
+
+
+
+.container3-div::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 216, 245);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container3-div:hover::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 1.8s;
+}
+
+
+.container3-div:hover h3 {
+    color: blue;
+}
+
+.container3-div:hover p {
+    opacity: 1;
+}
+
+.container4{
+    margin-top: 10%;
+    height: 800px;
+}
+
+.container4 h3 {
+    padding-top: 60px;
+    padding-left: 120px;
+    font-size: 40px ;
+    padding-left: -20px;
+}
+
+.c4-line{
+    width: 90px;
+    height: 4px;
+    background-color: blue;
+    text-align: center;
+    margin : 10px 120px ; 
+}
+
+.c4-desc{
+    margin : 10px 120px ; 
+    font-size: 20px;
+}
+.c4-p{
+    margin: 10px 120px;
+}
+
+
+.c4-div1{
+    width: 40%;
+    display: inline-block;
+}
+
+.container4 img{
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin: 60px 100px;
+}
+.container4 ol{
+    float: right;
+}
+
+
+.dots {
+    text-align: center; 
+    margin-top: 20px;
+    padding: 0;
+}
+
+.dots li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;  
+    cursor: pointer;
+}
+
+.dots li:hover {
+    background-color: blue;
+}
+
+
+.container4 ol {
+    float: none; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dots {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.c4-image-wrapper {
+    float: right;
+    margin: 0px 80px;
+    text-align: center;
+}
+
+.c4-image-wrapper img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.first-slider {
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/stock-vector-winter-sport-equipment-shop-or-store-interior-rent-of-mountain-skiing-and-snowboarding-equipment-2066811056.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.first-slider .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 120px 0;
+  color: white;
+}
+
+.stat-box {
+  width: 25%;
+  float: left;
+  color: white;
+}
+
+.stat-box i {
+  font-size: 45px;
+  color: #cbb3ff;
+  margin-bottom: 10px;
+}
+
+.stat-box h3 {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+.stat-box p {
+  font-size: 20px;
+}
+
+
+.container5{
+    width: 80%;
+    margin: 15% 10%;
+    height: 600px;
+}
+
+.c5-div{
+    width: 350px;
+    height: 360px;
+    border: 2px solid black;
+    margin: auto;
+    float: left;
+    position: relative;
+}
+
+.c5-1{
+    margin-left: 10px;
+}
+
+.c5-2{
+    margin: 0px 70px;
+}
+
+.c5-div h3 {
+    padding-top: 20px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.cr-p1{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.cr-p2{
+    font-size: 18px;
+}
+
+.c5-div button{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.c5-div:hover .circle{
+    border: 1px solid blue;
+}
+
+.c5-div:hover .c5-div-h3 {
+    color: blue;
+}
+
+
+
+
+.c5-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 216, 245);
+    opacity: 1;
+    z-index: 1;
+}
+
+.c5-div:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+
+.second-slider {
+  background-image: url(../images/1000_F_616297750_Jtd0a6ulZVmh9XhWnF4cpdGPYkDlH6Xb.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+}
+
+.team-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.team-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  margin: 0 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.team-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.team-card .role {
+  font-weight: bold;
+  color: #42a5f5;
+  margin-bottom: 10px;
+}
+
+.team-card .desc {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.container6{
+    padding-top: 5%;
+    width: 80%;
+    margin: auto;
+}
+
+
+.team-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(193, 184, 184);
+    padding: 16px 14px;
+    text-align: center;
+    position: relative;
+}
+
+.team-item2{
+    margin: 0px 5%;
+}
+
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-icons{
+    position: absolute;
+    top : 0 ;
+    left : 0 ; 
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.team-item:hover .team-icons{
+    visibility: visible;
+}
+
+
+.team-item:hover .team-info-title{
+    color: white;
+}
+
+.team-item:hover .team-info-p{
+    color: blue;
+}
+
+.team-icons i {
+    color: white;
+    background-color: blue;
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: auto;
+}
+
+
+.team-info h3{
+    font-size: 22px;
+}
+
+
+
+
+.team-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(45, 141, 214);
+    opacity: 1;
+    z-index: 1;
+}
+
+.team-item:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.container7{
+    margin-top: 10%;
+    width: 80%;
+    margin: auto;
+}
+
+
+.c7-div{
+    float: left;
+    width: 30%;
+    height: 460px;
+    /* background-color: rgb(193, 184, 184); */
+    padding: 16px 14px;
+    text-align: center;
+    position: relative;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.c7-div2{
+    margin: 0px 5%;
+}
+
+.c7-img{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+
+.c7-img img{
+    width: 100%;
+}
+
+.c7-div i {
+    color: blue;
+}
+
+.c7-div a{
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+    z-index: 999;
+}
+
+.c7-div:hover .c7-h3{
+    color: rgb(222, 209, 75);
+}
+.c7-div:hover .c7-p{
+    color: blue;
+}
+
+
+
+.c7-div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(45, 141, 214);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.c7-div:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.container8{
+    height: 380px;
+    background-color: rgb(115, 185, 242);
+    text-align: center;
+}
+
+.container8 img{
+    padding-top: 2% ;
+    width: 250px;
+    height: 250px;
+}
+
+.c8-icons i {
+    font-size: 40px ;
+}
+
+.container8 p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
